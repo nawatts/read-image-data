@@ -7,6 +7,12 @@
     "email": "nick@nawatts.com"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nawatts/read-image-data.git"
+  },
+  "homepage": "https://github.com/nawatts/read-image-data",
+  "bugs": "https://github.com/nawatts/read-image-data/issues",
   "keywords": [
     "image-data",
     "blob",
