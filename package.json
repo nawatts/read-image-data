@@ -1,0 +1,39 @@
+{
+  "name": "read-image-data",
+  "version": "1.0.0",
+  "description": "Read ImageData from a Blob",
+  "author": {
+    "name": "Nick Watts",
+    "email": "nick@nawatts.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "image-data",
+    "blob",
+    "parse"
+  ],
+  "main": "lib/read-image-data.js",
+  "scripts": {
+    "build": "mkdirp lib && babel read-image-data.js > lib/read-image-data.js",
+    "build:dist": "mkdirp lib && babel read-image-data.js | uglifyjs --compress --mangle - > lib/read-image-data.js",
+    "demo": "http-server demo -o",
+    "predemo": "npm run build && cp lib/read-image-data.js demo/",
+    "prepublish": "npm run build:dist",
+    "lint": "eslint *.js",
+    "clean": "rimraf lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^3.2.0",
+    "eslint-plugin-import": "^1.12.0",
+    "http-server": "^0.9.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "uglify-js": "^2.7.0"
+  }
+}
