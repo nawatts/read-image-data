@@ -1,5 +1,7 @@
 read-image-data.js
 demo
+test
+karma.conf.js
 .babelrc
 .editorconfig
 .eslintrc
