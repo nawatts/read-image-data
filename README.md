@@ -12,3 +12,10 @@ document.getElementById('file-input').addEventListener('change', (e) => {
   });
 });
 ```
+
+### Reference
+
+* [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData)
+* [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D)
+* [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
+* [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob)
