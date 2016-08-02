@@ -21,7 +21,7 @@
   "main": "lib/read-image-data.js",
   "scripts": {
     "build": "mkdirp lib && babel read-image-data.js > lib/read-image-data.js",
-    "build:dist": "mkdirp lib && babel read-image-data.js | uglifyjs --compress --mangle - > lib/read-image-data.js",
+    "build:dist": "npm run clean && mkdirp lib && babel read-image-data.js | uglifyjs --compress --mangle - > lib/read-image-data.js",
     "test": "karma start",
     "demo": "http-server demo -o",
     "predemo": "npm run build && cp lib/read-image-data.js demo/",
